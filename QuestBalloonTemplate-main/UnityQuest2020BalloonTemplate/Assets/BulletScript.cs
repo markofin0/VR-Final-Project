@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    public GameObject prefabToDuplicate;
+    public GameObject prefabToDuplicate; 
+    public GameObject originalObject; 
     public bool matchRotationToSurface = true;
-
-    private GameObject previousPortal;
+    public GameObject objectToDestroy;
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         ContactPoint contact = collision.contacts[0];
         Vector3 collisionPoint = contact.point;
         Vector3 collisionNormal = contact.normal;
 
+        
         Quaternion rotation;
         if (matchRotationToSurface)
         {
@@ -22,28 +24,14 @@ public class BulletScript : MonoBehaviour
         }
         else
         {
-            rotation = transform.rotation;
+            rotation = originalObject.transform.rotation;
         }
 
-        // Check if the bullet is blue or red
-        string bulletColor = gameObject.tag; // Assuming bullet color is determined by its tag
+        
+        Instantiate(prefabToDuplicate, collisionPoint, rotation);
 
-        // Find and destroy the previous portal if it matches the bullet color
-        GameObject[] portals = GameObject.FindGameObjectsWithTag(bulletColor + "portal");
-        foreach (GameObject portal in portals)
-        {
-            if (portal != null && portal != previousPortal)
-            {
-                Destroy(portal);
-            }
-        }
-
-        // Instantiate the new portal
-        GameObject newPortal = Instantiate(prefabToDuplicate, collisionPoint, rotation);
-        previousPortal = newPortal;
-
-        // Destroy the bullet itself
+        Destroy(objectToDestroy);
         Destroy(gameObject);
+        
     }
 }
-
