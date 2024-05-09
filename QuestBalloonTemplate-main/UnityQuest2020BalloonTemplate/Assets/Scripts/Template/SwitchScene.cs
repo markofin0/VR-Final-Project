@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
-    public void LoadScene(int index) 
+    public void LoadScene(int index)
     {
         SceneManager.LoadScene(index);
     }
@@ -15,7 +15,7 @@ public class SwitchScene : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
-    public void LoadNextScene() 
+    public void LoadNextScene()
     {
         int index = SceneManager.GetActiveScene().buildIndex;
         index = (index + 1) % SceneManager.sceneCountInBuildSettings;
