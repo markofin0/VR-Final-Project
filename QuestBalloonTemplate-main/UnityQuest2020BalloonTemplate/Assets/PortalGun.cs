@@ -55,7 +55,7 @@ public class PortalGun : MonoBehaviour
     public void ShootOne()
     {
 
-
+        
         GameObject blueBall = Instantiate(portalBallOne, ballSpawnPoint.position, ballSpawnPoint.rotation);
         Rigidbody rb = blueBall.GetComponent<Rigidbody>();
         rb.velocity = ballSpawnPoint.up * ballSpeed;

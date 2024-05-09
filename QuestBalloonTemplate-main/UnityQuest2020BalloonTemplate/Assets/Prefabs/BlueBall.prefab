@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2730392238006028983}
   m_Layer: 0
   m_Name: BlueBall
-  m_TagString: Untagged
+  m_TagString: blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,3 +173,4 @@ MonoBehaviour:
   prefabToDuplicate: {fileID: 5357640430689665332, guid: c7c59e5384c7f4d7c91a61e585df911a, type: 3}
   originalObject: {fileID: 0}
   matchRotationToSurface: 1
+  objectToDestroy: {fileID: 0}

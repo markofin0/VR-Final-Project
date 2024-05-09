@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8765898366330330832}
   m_Layer: 0
   m_Name: RedBall
-  m_TagString: Untagged
+  m_TagString: red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   prefabToDuplicate: {fileID: 6856493016134734643, guid: 9c016086b0f8448cba2b42066e39161e, type: 3}
   originalObject: {fileID: 0}
   matchRotationToSurface: 1
+  objectToDestroy: {fileID: 0}
 --- !u!1 &7494557209360087619
 GameObject:
   m_ObjectHideFlags: 0
