@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-public class PortalScript : MonoBehaviour
+public class PortalScript2 : MonoBehaviour
 {
-    public Transform redExit;
-    public Transform blueExit;
+    public Transform purpleExit;
+    public Transform greenExit;
     public GameObject player;
     public float teleportCooldown = 1f;
 
@@ -20,14 +20,14 @@ public class PortalScript : MonoBehaviour
     {
         if (other.CompareTag("Player") && !isOnCooldown)
         {
-            if (CompareTag("redportal"))
+            if (CompareTag("purpleportal"))
             {
-                StartCoroutine(TeleportPlayer(blueExit));
+                StartCoroutine(TeleportPlayer(greenExit));
             }
 
-            if (CompareTag("blueportal"))
+            if (CompareTag("greenportal"))
             {
-                StartCoroutine(TeleportPlayer(redExit));
+                StartCoroutine(TeleportPlayer(purpleExit));
             }
         }
     }

@@ -41,7 +41,6 @@ public class BulletScript : MonoBehaviour
         // Instantiate the new portal
         GameObject newPortal = Instantiate(prefabToDuplicate, collisionPoint, rotation);
         previousPortal = newPortal;
-        Destroy(objectToDestroy);
         Destroy(gameObject);
     }
 }

@@ -12,6 +12,8 @@ TagManager:
   - red
   - blueportal
   - redportal
+  - purpleportal
+  - greenportal
   layers:
   - Default
   - TransparentFX
