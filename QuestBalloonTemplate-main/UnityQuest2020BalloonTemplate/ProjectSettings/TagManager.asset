@@ -6,6 +6,12 @@ TagManager:
   tags:
   - RedPortal
   - BluePortal
+  - portalbutton
+  - companioncube
+  - blue
+  - red
+  - blueportal
+  - redportal
   layers:
   - Default
   - TransparentFX
