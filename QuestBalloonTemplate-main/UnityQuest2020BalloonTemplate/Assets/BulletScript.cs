@@ -31,6 +31,7 @@ public class BulletScript : MonoBehaviour
         Instantiate(prefabToDuplicate, collisionPoint, rotation);
 
         Destroy(objectToDestroy);
+        Destroy(gameObject);
         
     }
 }
