@@ -20,32 +20,32 @@ public class PortalGun : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         float leftTriggerValue = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.LTouch);
         float rightTriggerValue = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch);
 
-        // Detect left trigger press
+        
         if (leftTriggerValue > 0.1f && !leftTriggerPressed)
         {
             ShootOne();
-            leftTriggerPressed = true; // Mark as pressed
+            leftTriggerPressed = true; 
         }
         else if (leftTriggerValue <= 0.1f)
         {
-            leftTriggerPressed = false; // Reset when trigger is released
+            leftTriggerPressed = false; 
         }
 
-        // Detect right trigger press
+        
         if (rightTriggerValue > 0.1f && !rightTriggerPressed)
         {
             ShootTwo();
-            rightTriggerPressed = true; // Mark as pressed
+            rightTriggerPressed = true; 
         }
         else if (rightTriggerValue <= 0.1f)
         {
-            rightTriggerPressed = false; // Reset when trigger is released
+            rightTriggerPressed = false; 
         }
     }
 
