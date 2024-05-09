@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2237089960534249371}
   - component: {fileID: 2460145200467415206}
   - component: {fileID: -7689698130328963805}
+  - component: {fileID: -8765898366330330832}
   m_Layer: 0
   m_Name: RedBall
   m_TagString: Untagged
@@ -62,6 +63,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8765898366330330832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064579033220115512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12f07603b5694dc2a9f3b3877e4d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToDuplicate: {fileID: 6856493016134734643, guid: 9c016086b0f8448cba2b42066e39161e, type: 3}
+  originalObject: {fileID: 0}
+  matchRotationToSurface: 1
 --- !u!1 &7494557209360087619
 GameObject:
   m_ObjectHideFlags: 0

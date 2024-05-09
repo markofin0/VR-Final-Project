@@ -4,22 +4,65 @@ using UnityEngine;
 
 public class PortalScript : MonoBehaviour
 {
-    public Transform RedExit; // Exit point for the red portal
-    public Transform BlueExit; // Exit point for the blue portal
-    public GameObject player; // Reference to the player GameObject
+    public Transform RedExit; 
+    public Transform BlueExit; 
+    public GameObject player; 
+    public float teleportCooldown = 1f; 
+
+    private OVRPlayerController ovrPlayerController;
+    private bool isOnCooldown = false;
+
+    private void Start()
+    {
+        
+        ovrPlayerController = player.GetComponent<OVRPlayerController>();
+
+    }
 
     private void OnTriggerEnter(Collider collider)
     {
-        // Check if the player is entering the RedPortal
-        if (gameObject.name == "RedPortal")
+        
+        if (collider.CompareTag("Player") && !isOnCooldown)
         {
-            player.transform.position = BlueExit.position;
+            
+            if (CompareTag("RedPortal"))
+            {
+                StartCoroutine(TeleportPlayer(BlueExit));
+            }
+
+            
+            if (CompareTag("BluePortal"))
+            {
+                StartCoroutine(TeleportPlayer(RedExit));
+            }
+        }
+    }
+
+    private IEnumerator TeleportPlayer(Transform exitPoint)
+    {
+        
+        if (ovrPlayerController != null)
+        {
+            ovrPlayerController.enabled = false;
         }
 
-        // Check if the player is entering the BluePortal
-        if (gameObject.name == "BluePortal")
+        
+        isOnCooldown = true;
+
+        
+        player.transform.position = exitPoint.position;
+        player.transform.rotation = exitPoint.rotation;
+
+        
+        yield return new WaitForSeconds(teleportCooldown);
+
+        
+        if (ovrPlayerController != null)
         {
-            player.transform.position = RedExit.position;
+            ovrPlayerController.enabled = true;
         }
+
+        
+        isOnCooldown = false;
     }
 }
