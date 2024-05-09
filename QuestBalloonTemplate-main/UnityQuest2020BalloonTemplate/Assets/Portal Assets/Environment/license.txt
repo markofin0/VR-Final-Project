@@ -1,0 +1,11 @@
+Model Information:
+* title:	Portal 2 Test Room
+* source:	https://sketchfab.com/3d-models/portal-2-test-room-d2bc3fdf30ff486d9932def6f6b89ac7
+* author:	Far0s (https://sketchfab.com/Far0s)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Portal 2 Test Room" (https://sketchfab.com/3d-models/portal-2-test-room-d2bc3fdf30ff486d9932def6f6b89ac7) by Far0s (https://sketchfab.com/Far0s) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
