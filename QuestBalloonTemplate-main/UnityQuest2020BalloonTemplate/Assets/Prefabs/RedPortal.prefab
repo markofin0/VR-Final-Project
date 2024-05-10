@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1304247359747847284}
   m_Layer: 0
   m_Name: RedPortalExit
-  m_TagString: Untagged
+  m_TagString: RedExit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 8369999497475263463}
   - component: {fileID: 3748888744715382020}
   - component: {fileID: 2806342795447768765}
-  - component: {fileID: 7595884623846546732}
+  - component: {fileID: 3336204709997334358}
   m_Layer: 0
   m_Name: RedPortal
   m_TagString: RedPortal
@@ -175,7 +175,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8, z: 0.13}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &7595884623846546732
+--- !u!114 &3336204709997334358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,10 +184,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6856493016134734643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d74f53e18aeaf4539a7d0b0ec8c5bc25, type: 3}
+  m_Script: {fileID: 11500000, guid: e8406896562fba94fa7d2afde3b0c191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedExit: {fileID: 1304247359747847284}
-  BlueExit: {fileID: 0}
-  player: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  player: {fileID: 0}
   teleportCooldown: 1
+  blueExit: {fileID: 0}

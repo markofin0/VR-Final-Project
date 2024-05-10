@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 532726129361806963}
   m_Layer: 0
   m_Name: BluePortalExit
-  m_TagString: Untagged
+  m_TagString: BlueExit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,10 +41,11 @@ GameObject:
   - component: {fileID: 7013573248299899360}
   - component: {fileID: 2412728685205880579}
   - component: {fileID: 3715223817355461818}
-  - component: {fileID: 8941617052990738219}
+  - component: {fileID: 3840785300414656537}
+  - component: {fileID: -6544332356842678012}
   m_Layer: 0
   m_Name: BluePortal
-  m_TagString: Untagged
+  m_TagString: BluePortal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +95,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8, z: 0.13}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &8941617052990738219
+--- !u!114 &3840785300414656537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,13 +104,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5357640430689665332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d74f53e18aeaf4539a7d0b0ec8c5bc25, type: 3}
+  m_Script: {fileID: 11500000, guid: 8439805bc14ec78499c4a11d81abfc6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedExit: {fileID: 0}
-  BlueExit: {fileID: 532726129361806963}
-  player: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  player: {fileID: 0}
   teleportCooldown: 1
+  redExit: {fileID: 0}
+--- !u!114 &-6544332356842678012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5357640430689665332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f21717653e91ff4b98984f7b39f2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6161089956181538187
 GameObject:
   m_ObjectHideFlags: 0

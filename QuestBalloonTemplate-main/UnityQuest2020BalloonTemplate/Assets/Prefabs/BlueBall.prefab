@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 6399831299557587837}
   - component: {fileID: -542548549632902595}
   - component: {fileID: 3976423865972388248}
-  - component: {fileID: 2730392238006028983}
+  - component: {fileID: -1848226337540098651}
   m_Layer: 0
   m_Name: BlueBall
   m_TagString: Untagged
@@ -158,7 +158,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2730392238006028983
+--- !u!114 &-1848226337540098651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,9 +167,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5339683290329353347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d12f07603b5694dc2a9f3b3877e4d1f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 119306f3b3c3e874a8d15db187254cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToDuplicate: {fileID: 5357640430689665332, guid: c7c59e5384c7f4d7c91a61e585df911a, type: 3}
   originalObject: {fileID: 0}
   matchRotationToSurface: 1
+  objectToDestroy: {fileID: 0}

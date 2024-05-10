@@ -65,4 +65,9 @@ public class PortalScript : MonoBehaviour
         
         isOnCooldown = false;
     }
+    private void Update()
+    {
+        
+    }
+    
 }
