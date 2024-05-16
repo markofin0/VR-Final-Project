@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class door : MonoBehaviour
+public class door2 : MonoBehaviour
 {
 
     public GameObject companionCubeObject;
@@ -13,14 +13,14 @@ public class door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     private void Update()
     {
         companionCubeObject = GameObject.FindGameObjectWithTag("companionCube");
         Companioncube = companionCubeObject.GetComponent<companioncube>();
         //Debug.Log(Companioncube.activated);
-        if(Companioncube != null)
+        if (Companioncube != null)
         {
             //Debug.Log("Not null");
         }
@@ -32,15 +32,15 @@ public class door : MonoBehaviour
         if (other.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
         {
             Debug.Log("Collides!");
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level2");
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
+        if (collision.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
         {
             Debug.Log("Collides!");
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level2");
         }
     }
 }
