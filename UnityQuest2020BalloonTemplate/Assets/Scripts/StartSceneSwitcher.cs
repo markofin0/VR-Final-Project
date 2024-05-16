@@ -8,6 +8,7 @@ public class StartSceneSwitcher : MonoBehaviour
     // Start is called before the first frame update
     public void SwitchScene()
     {
+        // switches scene to first level, method called on button press in BaseScene.unity
         SceneManager.LoadScene("LevelOne");
     }
 }

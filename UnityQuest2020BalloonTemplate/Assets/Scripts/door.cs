@@ -17,6 +17,7 @@ public class door : MonoBehaviour
     }
     private void Update()
     {
+        // this is in Update() due to needing to make sure it always has a target, which is grabbing an object with the tag companionCube
         companionCubeObject = GameObject.FindGameObjectWithTag("companionCube");
         Companioncube = companionCubeObject.GetComponent<companioncube>();
         //Debug.Log(Companioncube.activated);
@@ -31,6 +32,7 @@ public class door : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
         {
+            // if the player collides with the door while all requirements are met, it loads a new scene
             Debug.Log("Collides!");
             SceneManager.LoadScene("Level3");
         }
@@ -39,6 +41,7 @@ public class door : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
         {
+            // both OnCollisionEnter and OnTriggerEnter are used here to make sure that this gets executed on whatever frame comes first, may be redundant
             Debug.Log("Collides!");
             SceneManager.LoadScene("Level3");
         }

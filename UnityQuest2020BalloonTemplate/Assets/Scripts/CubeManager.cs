@@ -4,5 +4,5 @@ using UnityEngine;
 //Michael
 public class CubeManager: MonoBehaviour
 {
-    
+    // combined into companion cube
 }

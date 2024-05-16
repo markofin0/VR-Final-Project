@@ -25,6 +25,7 @@ public class ScoreManager : MonoBehaviour
 
     public void increaseScore()
     {
+        // method to increase score variable
         Debug.Log("increased score");
         scoreKeeper++;
         UpdateDisplay();
@@ -33,6 +34,7 @@ public class ScoreManager : MonoBehaviour
 
     public void UpdateDisplay()
     {
+        // method to display score change
         scoreText.text = "score: " + scoreKeeper;
 
     }

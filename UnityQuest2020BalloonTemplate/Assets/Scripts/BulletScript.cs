@@ -11,7 +11,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        // original bullet script, split into RedBullet.cs and BlueBullet.cs
         ContactPoint contact = collision.contacts[0];
         Vector3 collisionPoint = contact.point;
         Vector3 collisionNormal = contact.normal;

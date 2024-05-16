@@ -45,7 +45,7 @@ public class BluePortal : MonoBehaviour
         }
 
         isOnCooldown = true;
-
+        // transforms player to new portal position along with rotation
         player.transform.position = exitPoint.position;
         player.transform.rotation = exitPoint.rotation;
 

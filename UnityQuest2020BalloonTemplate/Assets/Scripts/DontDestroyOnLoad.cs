@@ -15,6 +15,7 @@ public class DontDestroyOnLoad : MonoBehaviour
     {
         
     }
+    // used for all objects that are not wanted to be destroyed in between loading scenes
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);

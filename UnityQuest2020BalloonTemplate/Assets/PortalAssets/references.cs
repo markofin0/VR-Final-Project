@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class references : MonoBehaviour
 {
-    //https://jooyounglee.artstation.com/projects/v1A6WD
+    // "\VR-Final-Project\Important Links + Contributions"
 }

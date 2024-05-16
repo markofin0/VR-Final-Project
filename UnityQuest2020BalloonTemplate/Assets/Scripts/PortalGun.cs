@@ -27,7 +27,7 @@ public class PortalGun : MonoBehaviour
         float leftTriggerValue = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.LTouch);
         float rightTriggerValue = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch);
 
-        
+        // shoots RedBullet or BlueBullet depending on trigger used, also deploys audio
         if (leftTriggerValue > 0.1f && !leftTriggerPressed)
         {
             ShootOne();
@@ -58,7 +58,7 @@ public class PortalGun : MonoBehaviour
     public void ShootOne()
     {
 
-
+        // instantiates blueBall, sets values according to variables set in inspector
         GameObject blueBall = Instantiate(portalBallOne, ballSpawnPoint.position, ballSpawnPoint.rotation);
         Rigidbody rb = blueBall.GetComponent<Rigidbody>();
         rb.velocity = ballSpawnPoint.up * ballSpeed;
@@ -68,7 +68,7 @@ public class PortalGun : MonoBehaviour
 
     public void ShootTwo()
     {
-
+        // instantiates redBall, sets values according to variables set in inspector
         GameObject redBall = Instantiate(portalBallTwo, ballSpawnPoint.position, ballSpawnPoint.rotation);
         Rigidbody rb = redBall.GetComponent<Rigidbody>();
         rb.velocity = ballSpawnPoint.up * ballSpeed;

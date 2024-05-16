@@ -1,0 +1,42 @@
+Due to the nature of out project's scripts being complex surrounding the Portal mechanic,
+we both worked on almost every script in this project as whenever a new implementation
+would break something, we would have to disect each others code and tune it to fit
+our new needs. However, here is a list of what we both started/ worked on.
+
+Imported Assets
+Imported Portal Assets - Mark
+PBS Materials Variety Pack - Michael
+
+Prefabs
+BlueBall/RedBall prefab - Mark & Michael (used to be one prefab, made by Michael, Mark split them into two to make the use of them easier)
+Companion Cube prefab - Mark
+Door prefab - Mark
+green/redCube prefabs - Mark
+portal 2 button prefab - Mark
+RedPortal / BluePortal prefabs - Michael & Mark (used to be one prefab, made by Michael, Mark split them into two to make the use of them easier + had to be reworked)
+ScoreManager prefab - Michael
+
+Scenes
+BaseScene - Mark
+Level One - Michael
+Level2 - Mark
+Level3 - Mark
+PortalGunTest - Michael
+
+Scripts
+Blue/Red Bullet + Blue/Red Portal - Michael & Mark (used to be one prefab, made by Michael, Mark split them into two to make the use of them easier + had to be reworked)
+CompanionCube - Mark & Michael ( created by Mark but further implementation of score aspect made by Michael)
+cubeDestroyer - Mark
+cubeGenerator - Mark
+CubeManager - Mark
+DontDestroyOnLoad - Mark
+door & door2 - Mark
+Red/Blue Bullets & Red/Blue Portals (used to be one script respectively, made by Michael, Mark split them into two to make the use of them easier + had to be reworked a little)
+PortalGun - Michael
+StartSceneSwitcher - Mark
+
+
+Recording + Video Editing done by Mark
+Documentation done by Mark
+
+Overall we both feel that work was split evenly and we spent similar amounts of time on this project.

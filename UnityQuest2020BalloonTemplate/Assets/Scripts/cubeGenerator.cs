@@ -14,6 +14,7 @@ public class cubeGenerator : MonoBehaviour
     }
     public void SpawnCube()
     {
+        // instantiates a cube prefab of choice in inspector at the location of a empty game object in scene
         Instantiate(cubeprefab, cubeSpawn.transform.position, Quaternion.identity);
     }
     // Update is called once per frame

@@ -6,5 +6,5 @@ public class portalbutton : MonoBehaviour
 {
     public bool activated;
 
-    
+    // previously used script, empty now just for reference based off old commits
 }
