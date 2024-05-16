@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class CubeManager : OVRGrabbable
+//Michael
+public class CubeManager: MonoBehaviour
 {
-
     public ScoreManager scoreManager;
-    public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
+    public bool canIncrease = true;
+    
+    void OnCollisionEnter(Collision collision)
     {
-        base.GrabEnd(linearVelocity, angularVelocity);
-        scoreManager.increaseScore();
-
+        //checks to see if the object scollided with has the tag "button"
+        if (collision.gameObject.CompareTag("Button") && canIncrease == true)
+        {
+            //increases the score
+            Debug.Log("Button tag detected. Increasing score.");
+            scoreManager.increaseScore();
+            canIncrease = false;
+        }
     }
-
-
 }
