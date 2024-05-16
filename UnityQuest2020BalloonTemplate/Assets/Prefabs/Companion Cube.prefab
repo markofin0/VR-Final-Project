@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1342278036057700942}
   - component: {fileID: 1342278036057700943}
   - component: {fileID: 1453442525072516465}
+  - component: {fileID: 7077165142135531972}
   m_Layer: 0
   m_Name: Companion Cube
   m_TagString: companionCube
@@ -146,3 +147,17 @@ MonoBehaviour:
   activated: 0
   redCube: {fileID: 8650201717160311144, guid: c7120d035c417e4468d5fdbffc125623, type: 3}
   greenCubePrefab: {fileID: 4873078882465741468, guid: 12607e60826fe9c4bb6c81da566f2277, type: 3}
+  scoreManager: {fileID: 6096836114518854120, guid: f3e568e3ebf9eb445bf9e51952dfdde7, type: 3}
+  canIncrease: 1
+--- !u!114 &7077165142135531972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342278036057700937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990bf83138448477a9f0b5216ee69791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

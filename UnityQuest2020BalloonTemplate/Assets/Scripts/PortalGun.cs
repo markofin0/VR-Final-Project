@@ -12,12 +12,13 @@ public class PortalGun : MonoBehaviour
     public float ballSpeed = 5f;
     private bool leftTriggerPressed = false;
     private bool rightTriggerPressed = false;
+    AudioSource ballSound;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        ballSound = GetComponent<AudioSource>();
     }
 
     
@@ -30,7 +31,8 @@ public class PortalGun : MonoBehaviour
         if (leftTriggerValue > 0.1f && !leftTriggerPressed)
         {
             ShootOne();
-            leftTriggerPressed = true; 
+            leftTriggerPressed = true;
+            ballSound.Play();
         }
         else if (leftTriggerValue <= 0.1f)
         {
@@ -41,7 +43,8 @@ public class PortalGun : MonoBehaviour
         if (rightTriggerValue > 0.1f && !rightTriggerPressed)
         {
             ShootTwo();
-            rightTriggerPressed = true; 
+            rightTriggerPressed = true;
+            ballSound.Play();
         }
         else if (rightTriggerValue <= 0.1f)
         {

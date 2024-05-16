@@ -25,7 +25,7 @@ public class ScoreManager : MonoBehaviour
 
     public void increaseScore()
     {
-
+        Debug.Log("increased score");
         scoreKeeper++;
         UpdateDisplay();
 

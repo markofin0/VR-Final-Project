@@ -10,6 +10,9 @@ TagManager:
   - BlueExit
   - companionCube
   - portalbutton
+  - Button
+  - scoreManager
+  - portalgun
   layers:
   - Default
   - TransparentFX
