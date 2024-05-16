@@ -8,26 +8,39 @@ public class door : MonoBehaviour
 {
 
     public GameObject companionCubeObject;
-    private companioncube companionCube;
+    public Companioncube Companioncube;
 
     // Start is called before the first frame update
     void Start()
     {
-        companionCube = companionCubeObject.GetComponent<companioncube>();
+        
     }
     private void Update()
     {
-        if (companionCube != null)
+        companionCubeObject = GameObject.FindGameObjectWithTag("companionCube");
+        Companioncube = companionCubeObject.GetComponent<Companioncube>();
+        //Debug.Log(Companioncube.activated);
+        if(Companioncube != null)
         {
-            
+            //Debug.Log("Not null");
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && companionCube != null && companionCube.activated == true)
+        if (other.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
         {
-            SceneManager.LoadScene("Level2");
+            Debug.Log("Collides!");
+            SceneManager.LoadScene("Level3");
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player" && Companioncube != null && Companioncube.activated == true)
+        {
+            Debug.Log("Collides!");
+            SceneManager.LoadScene("Level3");
         }
     }
 }
