@@ -8,6 +8,7 @@ TagManager:
   - BluePortal
   - RedExit
   - BlueExit
+  - companionCube
   layers:
   - Default
   - TransparentFX
