@@ -8,12 +8,12 @@ Imported Portal Assets - Mark
 PBS Materials Variety Pack - Michael
 
 Prefabs
-BlueBall/RedBall prefab - Mark & Michael (used to be one prefab, made by Michael, Mark split them into two to make the use of them easier)
+BlueBall/RedBall prefab - Michael
 Companion Cube prefab - Mark
 Door prefab - Mark
 green/redCube prefabs - Mark
 portal 2 button prefab - Mark
-RedPortal / BluePortal prefabs - Michael & Mark (used to be one prefab, made by Michael, Mark split them into two to make the use of them easier + had to be reworked)
+RedPortal / BluePortal prefabs - Michael 
 ScoreManager prefab - Michael
 
 Scenes
@@ -24,14 +24,14 @@ Level3 - Mark
 PortalGunTest - Michael
 
 Scripts
-Blue/Red Bullet + Blue/Red Portal - Michael & Mark (used to be one prefab, made by Michael, Mark split them into two to make the use of them easier + had to be reworked)
-CompanionCube - Mark & Michael ( created by Mark but further implementation of score aspect made by Michael)
+Blue/Red Bullet + Blue/Red Portal - Michael & Mark 
+CompanionCube - Mark & Michael 
 cubeDestroyer - Mark
 cubeGenerator - Mark
 CubeManager - Mark
 DontDestroyOnLoad - Mark
 door & door2 - Mark
-Red/Blue Bullets & Red/Blue Portals (used to be one script respectively, made by Michael, Mark split them into two to make the use of them easier + had to be reworked a little)
+Red/Blue Bullets & Red/Blue Portals 
 PortalGun - Michael
 StartSceneSwitcher - Mark
 
