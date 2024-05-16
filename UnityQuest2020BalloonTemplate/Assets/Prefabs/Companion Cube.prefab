@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1342278036057700938}
   - component: {fileID: 1342278036057700942}
   - component: {fileID: 1342278036057700943}
+  - component: {fileID: 1453442525072516465}
   m_Layer: 0
   m_Name: Companion Cube
   m_TagString: companionCube
@@ -130,3 +131,18 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &1453442525072516465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342278036057700937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1997b5129acde4eaf0c523d383ec99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  redCube: {fileID: 8650201717160311144, guid: c7120d035c417e4468d5fdbffc125623, type: 3}
+  greenCubePrefab: {fileID: 4873078882465741468, guid: 12607e60826fe9c4bb6c81da566f2277, type: 3}
