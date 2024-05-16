@@ -9,6 +9,7 @@ TagManager:
   - RedExit
   - BlueExit
   - companionCube
+  - Button
   layers:
   - Default
   - TransparentFX
